@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A semantic HTML5 page example about cars">
+    <meta name="keywords" content="HTML5, semantic, example, cars, automotive">
+    <title>Cars Information Page</title>
+    <style>
+      
+        img.small-img {
+            max-width: 290px; 
+            width: 250%;
+            height: auto;
+            display: block;
+        }
+        figure { margin: 1rem 0; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to my Cars Info</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Car Inquiry Form</h2>
+            <form action="/submit-form" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <article> 
+            <h3>Latest Car News</h3>
+            <p>Electric vehicles are revolutionizing the automotive industry with advancements in battery technology.</p>
+        </article>
+        <figure>
+            <img class="small-img" src="Porche.jpg" alt="A sleek car" style="max-width: 290px;">
+            <figcaption>A sleek car</figcaption>
+        </figure>
+        <aside>
+            <h3>Did you know?</h3>
+            <p>The first car was invented in 1885 by Karl Benz, marking the beginning of modern automotive history.</p>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cars Info. All rights reserved.</p>
+    </footer>
+</body>
+</html>
